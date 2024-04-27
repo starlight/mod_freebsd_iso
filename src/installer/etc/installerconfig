@@ -1,0 +1,13 @@
+DISTRIBUTIONS="kernel.txz base.txz distribution.txz"
+
+#!/bin/sh
+
+echo "Running installerconfig..."
+ASSUME_ALWAYS_YES=YES
+pkg install -q -y git stow sudo tig tmux vim zsh
+pkg clean -a
+
+cat << SUDOERS > /usr/local/etc/sudoers
+%wheel ALL=(ALL:ALL) ALL
+SUDOERS
+
