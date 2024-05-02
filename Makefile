@@ -3,11 +3,11 @@ ARCH=amd64
 VERSION=14.0
 BASE=https://download.freebsd.org/releases/$(ARCH)/$(ARCH)/ISO-IMAGES/$(VERSION)
 SHA_FIL=CHECKSUM.SHA512-FreeBSD-$(VERSION)-RELEASE-$(ARCH)
-ISO_REL=FreeBSD-$(VERSION)-RELEASE-$(ARCH)-dvd1.iso
+ISO_REL=FreeBSD-$(VERSION)-RELEASE-$(ARCH)-disc1.iso
 ISO_DIR=media
 INS_FIL=etc/installerconfig
 DST_FIL=usr/freebsd-dist/distribution.txz
-ISO_MOD=FreeBSD-$(VERSION)-MODIFIED-$(ARCH)-dvd1.iso
+ISO_MOD=FreeBSD-$(VERSION)-MODIFIED-$(ARCH)-disc1.iso
 
 .PHONY: all clean
 
