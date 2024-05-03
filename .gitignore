@@ -1,4 +1,5 @@
-/*.iso
-/*.iso.xz
-/CHECKSUM*
+*.img
+*.iso
+*.xz
+CHECKSUM*
 /media
